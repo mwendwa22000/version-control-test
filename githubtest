@@ -34,7 +34,7 @@ public class ProceduralCalculator {
             } else {
                 System.out.println("The value is not greater than 10. It is " + result);
             }
-
+ // Ask the user if they want to continue or exit the program
             System.out.print("Do you want to continue (yes/no)? ");
             String response = scanner.next();
             if (!response.equalsIgnoreCase("yes")) {
