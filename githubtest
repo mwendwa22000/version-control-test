@@ -25,6 +25,7 @@ public class ProceduralCalculator {
                 System.out.println("Invalid operation. Please enter 'sum' or 'subtract'.");
                 continue;
             }
+// Display the result of the operation
 
             System.out.println("The result is: " + result);
 
