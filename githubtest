@@ -5,6 +5,7 @@ public class ProceduralCalculator {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+// Prompt the user to enter the first number
             System.out.print("Enter the first number: ");
             double num1 = scanner.nextDouble();
 
