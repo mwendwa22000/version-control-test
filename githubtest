@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class ProceduralCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter the first number: ");
+            double num1 = scanner.nextDouble();
+
+            System.out.print("Enter the second number: ");
+            double num2 = scanner.nextDouble();
+
+            System.out.print("Enter 'sum' or 'subtract' to perform the operation: ");
+            scanner.nextLine(); // Consume the newline character
+            String operation = scanner.nextLine();
+
+            double result = 0.0;
+            if (operation.equals("sum")) {
+                result = num1 + num2;
+            } else if (operation.equals("subtract")) {
+                result = num1 - num2;
+            } else {
+                System.out.println("Invalid operation. Please enter 'sum' or 'subtract'.");
+                continue;
+            }
+
+            System.out.println("The result is: " + result);
+
+            if (result > 10) {
+                System.out.println("The value is greater than 10. It is " + result);
+            } else {
+                System.out.println("The value is not greater than 10. It is " + result);
+            }
+
+            System.out.print("Do you want to continue (yes/no)? ");
+            String response = scanner.next();
+            if (!response.equalsIgnoreCase("yes")) {
+                System.out.println("Goodbye!");
+                break;
+            }
+        }
+
+        scanner.close();
+    }
+}
